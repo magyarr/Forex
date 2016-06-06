@@ -4,7 +4,7 @@ from pyspark.mllib.linalg import Vectors
 def transformToNumeric(inputStr):
     attList = inputStr.split(",")
 
-    # Filter out columns not wanted at this stage
+
     values = Vectors.dense([float(attList[28]), \
                             float(attList[4]),float(attList[5]), float(attList[6]), float(attList[7])])
     return values
