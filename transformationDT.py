@@ -7,7 +7,7 @@ def transformToNumeric(inputStr):
     trendEUR = -1.0 if float(attList[4]) < float(attList[7]) else 1.0
     trendAUD = -1.0 if float(attList[8]) < float(attList[11]) else 1.0
     trendNZD = -1.0 if float(attList[12]) < float(attList[15]) else 1.0
-    trendCAD = 0.0 if float(attList[16]) < float(attList[19]) else -1.0
+    trendCAD = 1.0 if float(attList[16]) < float(attList[19]) else -1.0
     trendCHF = 1.0 if float(attList[20]) < float(attList[23]) else -1.0
     trendJPY = 1.0 if float(attList[24]) < float(attList[27]) else -1.0
     # Global_trend=global weakness/strength
