@@ -16,7 +16,6 @@ def transformToNumeric(inputStr):
     USD_P = float(attList[29])
 
 
-    # Filter out columns not wanted at this stage
     values = Vectors.dense([USD_P,trendGBP,trendEUR,trendAUD,trendNZD,trendCAD,trendCHF,trendJPY, \
                             Global_trend])
     return values
